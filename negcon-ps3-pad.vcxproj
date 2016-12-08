@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <ProjectName>negcon-ps3-pad</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries\EEPROM;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries\EEPROM\utility;D:\OtherPrograms\arduino-1.6.11\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries;C:\Users\Josh\Documents\Arduino\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\avr;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\util;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\utils;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\avr;D:\OtherPrograms\arduino-1.6.11\hardware\teensy/../tools/arm/bin/..\arm-none-eabi\include;F:\Arduino\negcon-ps3-pad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>F:\Arduino\negcon-ps3-pad\__vm\.negcon-ps3-pad.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__HARDWARE_MK20dx256__;__HARDWARE_MK20DX256__;_VMDEBUG=1;__MK20DX256__;TEENSYDUINO=130;ARDUINO=106011;F_CPU={build.fcpu};__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries\EEPROM;D:\OtherPrograms\arduino-1.6.11\libraries\Timer;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries\EEPROM\utility;D:\OtherPrograms\arduino-1.6.11\libraries\Timer\utility;D:\OtherPrograms\arduino-1.6.11\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries;C:\Users\Josh\Documents\Arduino\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\avr;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\util;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\utils;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3\avr;D:\OtherPrograms\arduino-1.6.11\hardware\teensy/../tools/arm/bin/..\arm-none-eabi\include;F:\Arduino\negcon-ps3-pad;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries\EEPROM;D:\OtherPrograms\arduino-1.6.11\libraries\Timer;D:\OtherPrograms\arduino-1.6.11\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\libraries;D:\OtherPrograms\Visual Studio 2015 Community\Common7\IDE\Extensions\kdna4sii.2k4\Micro Platforms\default\debuggers;C:\Users\Josh\Documents\Arduino\libraries;D:\OtherPrograms\arduino-1.6.11\hardware\teensy\avr\cores\teensy3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>F:\Arduino\negcon-ps3-pad\__vm\.negcon-ps3-pad.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__HARDWARE_MK20dx256__;__HARDWARE_MK20DX256__;__MK20DX256__;TEENSYDUINO=130;ARDUINO=106011;F_CPU=96000000;USB_SERIAL_HID;LAYOUT_UNITED_KINGDOM;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="negcon-ps3-pad.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Config\NCConfigManager.cpp" />
+    <ClCompile Include="Source\Private\Config\NCModeConfig.cpp" />
+    <ClCompile Include="Source\Private\Input\NCInputManager.cpp" />
+    <ClCompile Include="Source\Private\NCPadDriver.cpp" />
+    <ClCompile Include="Source\Private\Serial\NCSerial.cpp" />
+    <ClCompile Include="Source\Private\Storage\NCCrossArray.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\Config\NCConfigManager.h" />
+    <ClInclude Include="Source\Public\Config\NCModeConfig.h" />
+    <ClInclude Include="Source\Public\EEPROM\EEPROMAnything.h" />
+    <ClInclude Include="Source\Public\Enums\NCEnums.h" />
+    <ClInclude Include="Source\Public\Input\NCInputManager.h" />
+    <ClInclude Include="Source\Public\Input\NCPadState.h" />
+    <ClInclude Include="Source\Public\NCPadDriver.h" />
+    <ClInclude Include="Source\Public\Serial\NCSerial.h" />
+    <ClInclude Include="Source\Public\Storage\NCCrossArray.h" />
+    <ClInclude Include="Source\Public\Teensy\NCPins.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties custom_teensy31_usb="serialhid" arduino.build.auto_discover_includes="0" vm.programmer_name="dragon" custom_teensy31_keys="en-gb" arduino.upload.port="COM3" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
