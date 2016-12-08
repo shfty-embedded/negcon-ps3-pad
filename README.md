@@ -12,7 +12,7 @@ The project is configured for the 3.2/3.1 by default, make sure to configure you
 
 As for the clock speed, I run mine at 96MHz.
 
-**Usage**
+**Configuration**
 
 After compiling and loading the firmware onto the Teensy via the Arduino software, it should show up as a USB HID device
 
@@ -45,6 +45,7 @@ _ButtonSensitivity_ (0.0 - infinity)
 
 Multiplier applied to the NeGcon's button axes.
 
+**Usage**
 
 You switch between these modes at runtime by holding start and pressing directions on the d-pad.
 
