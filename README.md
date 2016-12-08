@@ -1,20 +1,20 @@
 # negcon-ps3-pad
 
-Firmware for a configurable Arduino-powered DirectInput NeGcon adapter.
+Firmware for a configurable Teensyduino-powered DirectInput NeGcon adapter.
 
 (Hardware diagrams and reference images available [here](http://imgur.com/a/RzTdb))
 
 **Setup**
 
-In theory, this should run on any of the Teensy boards. I've only tested with the 3.1 though, so your mileage may vary.
+This project is designed to run on a [PJRC Teensy USB microcontroller](http://www.pjrc.com/teensy/index.html).
 
-The project is configured for the 3.2/3.1 by default, make sure to configure your board for 'Keyboard + Mouse + Joystick' if you use a different model.
+It's configured for the Teensy 3.1 by default and hasn't been tested with any other models, but in theory it should run on any of them.
 
-As for the clock speed, I run mine at 96MHz.
+Make sure to configure your board for 'Keyboard + Mouse + Joystick' if you use a different model. Clock speed is configured for 96MHz by default, but the project may be able to run acceptably at lower speeds.
 
 **Configuration**
 
-After compiling and loading the firmware onto the Teensy via the Arduino software, it should show up as a USB HID device
+After compiling and loading the firmware onto the Teensy via the Teensyduino software, it should show up as a USB HID device
 
 (DirectInput on Windows, untested on Mac but it should work)
 
